@@ -1,0 +1,87 @@
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+# Keystore
+**/key.properties
+**/*.keystore
+**/*.jks
+**/*.p12
+
+# Android SDK path trên máy từng dev
+**/local.properties
+
+# --- Hệ điều hành ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+
+# --- IDE / editor ---
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# =============================================================================
+# Backend — Java / Maven
+# =============================================================================
+backend/target/
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/*.log
+
+cursor/
+
+# =============================================================================
+# Frontend — Flutter / Dart
+# =============================================================================
+# Cache & output build
+**/.dart_tool/
+**/build/
+coverage/
+
+.pub-cache/
+.pub/
+
+.flutter-plugins
+.flutter-plugins-dependencies
+
+app.*.symbols
+app.*.map.json
+
+# --- Android (Gradle) ---
+**/android/.gradle/
+**/android/captures/
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/android/**/build/
+.cxx/
+
+# --- iOS ---
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# --- Desktop embedders (Flutter ephemeral) ---
+**/linux/flutter/ephemeral/
+**/macos/Flutter/ephemeral/
+**/windows/flutter/ephemeral/
+
+# --- Logs & tạm ---
+*.log
+*.tmp
+*.temp
+*.cache

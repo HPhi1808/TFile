@@ -1,0 +1,15 @@
+# Blueprint Render: Web Service chạy Docker từ ./backend
+# Trên dashboard Render, nhập DATABASE_URL (Neon) và ADMIN_PASSWORD khi tạo Blueprint (sync: false).
+services:
+  - type: web
+    name: tfile-backend
+    runtime: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: backend
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false

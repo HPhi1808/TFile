@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: tfile-backend
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+
+server:
+  port: ${PORT:8080}
+
+admin:
+  password: ${ADMIN_PASSWORD:}
+
+logging:
+  level:
+    com.tfile: INFO
